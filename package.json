@@ -38,7 +38,6 @@
     "gatsby-plugin-typescript": "3.6.0",
     "gatsby-source-filesystem": "3.6.0",
     "gatsby-transformer-sharp": "3.6.0",
-    "husky": "6.0.0",
     "lint-staged": "11.0.0",
     "postcss": "^8.3.0",
     "prettier": "2.3.0",
@@ -54,7 +53,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx",
     "build": "gatsby build",
@@ -70,11 +68,6 @@
   },
   "bugs": {
     "url": "https://github.com/impulse/gatsby-typescript-tailwind/issues"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
